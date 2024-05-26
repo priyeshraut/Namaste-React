@@ -1,0 +1,83 @@
+.header {
+    padding: .5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+
+.logo-container {
+    width: 10%;
+}
+
+.logo {
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-items > ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.nav-items > ul li {
+    font-size: 1rem;
+}
+
+.card {
+    border: 2px solid black;
+    width: 250px;
+    padding: 1em;
+}
+
+.card h1, h2 {
+    font-size: 1.5rem;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+
+
+.resIMg {
+    width: 100%;
+}
+
+.resIMg img {
+    max-width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.body {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.body > * {
+    flex-shrink: 0;
+}
+
+.filter-btn {
+    display: inline-block;
+    padding: .5em;
+    background-color: red;
+    color: #fff;
+    border-radius: .5em;
+}
+
+.shimmer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.shimmer-card {
+    width: 300px;
+    height: 500px;
+    background-color: cyan;
+}

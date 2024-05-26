@@ -1,0 +1,52 @@
+.header {
+    padding: .5em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: beige;
+}
+
+.logo-container {
+    width: 10%;
+}
+
+.logo {
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-items > ul {
+    display: flex;
+    gap: 2em;
+    list-style-type: none;
+}
+
+.nav-items > ul li {
+    font-size: 1.5rem;
+}
+
+.card {
+    border: 2px solid black;
+    width: 200px;
+    padding: 1em;
+}
+
+.resIMg {
+    width: 100%;
+}
+
+.resIMg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.body {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.body > * {
+    flex-shrink: 0;
+}
