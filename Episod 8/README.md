@@ -181,14 +181,16 @@ import UserClass from "./UserClass";
 
 
 
-// how does react componenet work behind the scenes
+ <!-- how does react componenet work behind the scenes -->
 
-// Whenever about component is rendered onto the web page or mybe mounted onto the web page so it basically start renderring jsx and whenever it is rendering it sees thereis a "UserClass" which is imported form "./UserClass" so it starts to load UserClass component it goes to this class based component now a new instance of this class is created and what happens when this class is called or maybe this class is instantiated so what happened is the contructor is called the first thing when the class loads is a contructor is called (when we say class loads that means we are creting a new instance of that class). 
+<!-- Whenever about component is rendered onto the web page or mybe mounted onto the web page so it basically start renderring jsx and whenever it is rendering it sees thereis a "UserClass" which is imported form "./UserClass" so it starts to load UserClass component it goes to this class based component now a new instance of this class is created and what happens when this class is called or maybe this class is instantiated so what happened is the contructor is called the first thing when the class loads is a contructor is called (when we say class loads that means we are creting a new instance of that class).  -->
 
-// So, whenever that class is instantiated the constructor is called remember this is very important
+<!-- So, whenever that class is instantiated the constructor is called remember this is very important -->
+
+<!-- once the constructor is called then render is called -->
 
 
-
+<!--
 const About = () => {
     return (
         <>
@@ -203,7 +205,6 @@ export default  About;
 
 
 
-// once the constructor is called then render is called
 import React from "react";
 
 class UserClass extends React.Component {
@@ -266,7 +267,7 @@ class About extends Component {
     }
 }
 
-// when the about component is loaded so first of all about compoenent is initialized It's basiclly a new instance of this class is created so the contructor ("console.log("Parent Contructor")") of about component is called thent the render ("console.log("Parent Render")") of about comp. is called then it goes to the children (UserClass) and then it again trigger the life cycle and now the "child contructor" is called and then the "child Render" is called.
+when the about component is loaded so first of all about compoenent is initialized It's basiclly a new instance of this class is created so the contructor ("console.log("Parent Contructor")") of about component is called thent the render ("console.log("Parent Render")") of about comp. is called then it goes to the children (UserClass) and then it again trigger the life cycle and now the "child contructor" is called and then the "child Render" is called.
 
 // so this is how the life cycle of React works. This is how the life cycle of class based comp. work
 
@@ -357,7 +358,7 @@ class About extends Component {
 
 
 
-// when the about component is loaded so first of all about compoenent is initialized It's basiclly a new instance of this class is created so the contructor ("console.log("Contructor")") is called then the render ("console.log("Render")") is called and once the contructor once this class based comp. is mounted onto the dom then the componentDidMount (console.log("componentDidMount")) is called.
+when the about component is loaded so first of all about compoenent is initialized It's basiclly a new instance of this class is created so the contructor ("console.log("Contructor")") is called then the render ("console.log("Render")") is called and once the contructor once this class based comp. is mounted onto the dom then the componentDidMount (console.log("componentDidMount")) is called.
 
 order: -
 Contructor
@@ -421,7 +422,7 @@ Parent Render
 Child Contructor
 Child Render
 Child componentDidMount
-Child componentDidMount
+Parent componentDidMount
  */
 
 
@@ -463,7 +464,7 @@ class UserClass extends React.Component {
     // destrucntor props
     const { name, location } = this.props;
     // destructor states
-    const {count} = this.state
+                                                                                                                   
 
     // render is called after contructor called
     console.log("Child Render");
@@ -532,11 +533,11 @@ class About extends Component {
 
 // I have one child UserClass what if we have multiple child how react life cycle work (two UserCalss inside About)
 
-// order:-
-// Parent Contructor
-// Parent Render
-
 /*
+order:-
+- Parent Contructor
+- Parent Render
+
 - Priyesh Raut (class)Child Contructor
 - Priyesh Raut (class)Child Render
 
@@ -551,7 +552,7 @@ class About extends Component {
 - Parent componentDidMount
 */
 
-// got to raact-life cycle diagram:- https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+ //got to raact-life cycle diagram:- https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
 
 // In react when the component is mounted It is mounted in two phases this is why react is fast first phase is render phase and second is commmit phase
 
